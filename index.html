@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Under Maintenance</title>
+  <style>
+    /* Global styles */
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* Content styles */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    /* Icon styles */
+    .icon {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-image: url(YOUR_ICON_PATH);
+      background-size: cover;
+      margin-bottom: 10px;
+    }
+
+    /* Blur effect on links */
+    a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Media queries for mobile and iPad */
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"></div>
+    <h1>Under Maintenance</h1>
+    <p>Sorry for the inconvenience, but we're performing some maintenance at the moment.</p>
+    <p>We'll be back online shortly!</p>
+    <p>Contact us at <a href="mailto:info@inindia.com">info@inindia.com</a> for any urgent inquiries.</p>
+  </div>
+</body>
+</html>
